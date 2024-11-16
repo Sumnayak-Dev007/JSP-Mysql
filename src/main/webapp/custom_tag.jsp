@@ -14,7 +14,7 @@
 ${s}<br><br>
 </c:forEach>
 
-<sql:setDataSource var="student" driver='com.mysql.jdbc.Driver' url="jdbc:mysql://localhost:3306/sum" user="root" password="Suman_Dev001"/>
+<sql:setDataSource var="student" driver='com.mysql.jdbc.Driver' url="jdbc:mysql://localhost:3306/sum" user="root" password="********"/>
 <sql:query dataSource="${student}" var="Result"> select* from student</sql:query>
 
 <c:forEach items="${Result.rows}" var="rec">
